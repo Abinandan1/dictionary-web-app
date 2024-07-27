@@ -34,7 +34,6 @@ export const Wrapper = styled.nav`
     gap: 0.5rem;
     background: var(--font-options-bg-color);
     box-shadow: ${(props) => {
-      console.log(props.theme);
       return props.theme === "dark"
         ? "0px 2px 10px 4px rgba(var(--shadow-color), 0.5)"
         : "rgba(149, 157, 165, 0.2) 0px 8px 24px;";

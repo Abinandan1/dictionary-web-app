@@ -7,23 +7,23 @@ const Navbar = () => {
   const { theme, setTheme } = useAppContext();
   const elements = [document.body, document.querySelector(".form-input")];
   const handleFontChange = (e) => {
-    document.querySelector(".show-select").classList.remove("show-select");
-    document.querySelector(".selected").textContent =
+    document.querySelector(".show-select")?.classList.remove("show-select");
+    document.querySelector(".selected")?.textContent =
       e.currentTarget.textContent;
     if (e.currentTarget.textContent === "Sans Serif") {
       elements.map((element) => {
-        element.classList.remove("font2");
-        element.classList.remove("font3");
+        element.classList?.remove("font2");
+        element.classList?.remove("font3");
       });
     }
     if (e.currentTarget.textContent === "Serif") {
       elements.map((element) => {
-        element.classList.add("font2");
+        element.classList?.add("font2");
       });
     }
     if (e.currentTarget.textContent === "Mono") {
       elements.map((element) => {
-        element.classList.add("font3");
+        element.classList?.add("font3");
       });
     }
   };
