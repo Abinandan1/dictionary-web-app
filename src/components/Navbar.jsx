@@ -12,18 +12,18 @@ const Navbar = () => {
       e.currentTarget.textContent;
     if (e.currentTarget.textContent === "Sans Serif") {
       elements.map((element) => {
-        element.classList?.remove("font2");
-        element.classList?.remove("font3");
+        element?.classList?.remove("font2");
+        element?.classList?.remove("font3");
       });
     }
     if (e.currentTarget.textContent === "Serif") {
       elements.map((element) => {
-        element.classList?.add("font2");
+        element?.classList?.add("font2");
       });
     }
     if (e.currentTarget.textContent === "Mono") {
       elements.map((element) => {
-        element.classList?.add("font3");
+        element?.classList?.add("font3");
       });
     }
   };
