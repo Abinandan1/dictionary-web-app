@@ -1,0 +1,151 @@
+@font-face {
+  font-family: font3;
+  src: url(/public/assets/fonts/inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+  font-family: font1;
+  src: url(/public/assets/fonts/inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+  font-family: font2;
+  src: url(/public/assets/fonts/lora/Lora-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* 
+  ==================
+  COLORS
+  ==================
+  */
+  --black-100: #3a3a3a;
+  --black-200: #2d2d2d;
+  --black-300: #1f1f1f;
+  --black-400: #050505;
+  --gray-100: #f4f4f4;
+  --gray-200: #e9e9e9;
+  --gray-300: #757575;
+  --white: #ffffff;
+  --purple-100: #a445ed;
+  --purple-200: #8f19e8;
+  --red: #ff5252;
+
+  --bg-color: var(--white);
+  --text-color: var(--black-200);
+  --theme-toggle-color: var(--gray-300);
+  --shadow-color: 5, 5, 5;
+  --font-options-bg-color: var(--white);
+  --form-input-bg-color: var(--gray-100);
+  --hr-bg-color: var(--gray-200);
+
+  --dark-bg-color: var(--black-400);
+  --dark-text-color: var(--white);
+  --dark-theme-toggle-color: var(--purple-100);
+  --dark-shadow-color: 164, 69, 237;
+  --dark-font-options-bg-color: var(--black-300);
+  --dark-form-input-bg-color: var(--black-300);
+  --dark-hr-bg-color: var(--black-100);
+  /* 
+  ==================
+  FONT SIZES
+  ==================
+  */
+  --heading-large: 32px;
+  --heading-medium: 18px;
+  --heading-small: 16px;
+  --body-medium: 15px;
+  --body-small: 14px;
+}
+
+.dark-theme {
+  --bg-color: var(--dark-bg-color);
+  --text-color: var(--dark-text-color);
+  --theme-toggle-color: var(--dark-theme-toggle-color);
+  --shadow-color: var(--dark-shadow-color);
+  --font-options-bg-color: var(--dark-font-options-bg-color);
+  --form-input-bg-color: var(--dark-form-input-bg-color);
+  --hr-bg-color: var(--dark-hr-bg-color);
+}
+
+body {
+  background: var(--bg-color);
+  transition: 0.3s linear all;
+  color: var(--text-color);
+  font-family: font1;
+}
+.font2 {
+  font-family: font2;
+}
+.font3 {
+  font-family: font3;
+}
+.italic {
+  font-style: italic;
+}
+.bold {
+  font-weight: bold;
+}
+h1 {
+  font-size: var(--heading-large);
+}
+h2 {
+  font-size: var(--heading-medium);
+}
+h3 {
+  font-size: var(--heading-small);
+}
+p,
+li {
+  font-size: var(--body-medium);
+}
+a,
+small {
+  font-size: var(--body-small);
+}
+
+input,
+select,
+option,
+textarea {
+  font-family: font1;
+}
+main {
+}
+.section-center {
+  margin: 2rem auto;
+  width: 327px;
+}
+hr {
+  border: none;
+  background: var(--hr-bg-color);
+  height: 1px;
+}
+@media (width>768px) {
+  :root {
+    --heading-large: 64px;
+    --heading-medium: 24px;
+    --heading-small: 20px;
+    --body-medium: 18px;
+    --body-small: 14px;
+  }
+  .section-center {
+    width: 689px;
+  }
+}
+
+@media (width>1170px) {
+  /* :root {
+    --heading-large: 64px;
+    --heading-medium: 24px;
+    --heading-small: 20px;
+    --body-medium: 18px;
+    --body-small: 14px;
+  } */
+  .section-center {
+    width: 737px;
+  }
+}
