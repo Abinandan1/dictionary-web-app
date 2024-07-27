@@ -8,7 +8,7 @@ const Navbar = () => {
   const elements = [document.body, document.querySelector(".form-input")];
   const handleFontChange = (e) => {
     document.querySelector(".show-select")?.classList.remove("show-select");
-    document.querySelector(".selected")?.textContent =
+    document.querySelector(".selected").textContent =
       e.currentTarget.textContent;
     if (e.currentTarget.textContent === "Sans Serif") {
       elements.map((element) => {
